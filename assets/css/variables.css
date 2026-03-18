@@ -1,0 +1,89 @@
+:root {
+  /* ─── Colors ─────────────────────────────────── */
+  --color-bg:           #0A0A0A;
+  --color-bg-2:         #111111;
+  --color-bg-3:         #161616;
+  --color-accent:       #FF6B00;
+  --color-accent-hover: #E55A00;
+  --color-accent-light: rgba(255, 107, 0, 0.12);
+  --color-accent-rgb:   255, 107, 0;
+  --color-text:         #FFFFFF;
+  --color-text-2:       #888888;
+  --color-text-3:       #555555;
+  --color-muted:        #888888;
+  --color-muted-2:      #555555;
+  --color-border:       rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 107, 0, 0.45);
+  --color-success:      #22C55E;
+  --color-error:        #EF4444;
+
+  /* ─── Typography ─────────────────────────────── */
+  --font-family:   'Inter', sans-serif;
+  --font-main:     'Inter', sans-serif;
+  --font-size-xs:  12px;
+  --font-size-sm:  14px;
+  --font-size-md:  16px;
+  --font-size-lg:  18px;
+  --font-size-xl:  24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+  --font-size-4xl: 64px;
+  --font-size-5xl: 72px;
+
+  /* ─── Spacing ────────────────────────────────── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 120px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+
+  /* ─── Border radius ──────────────────────────── */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  /* ─── Shadows ────────────────────────────────── */
+  --shadow-sm:        0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md:        0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg:        0 16px 48px rgba(0, 0, 0, 0.5);
+  --shadow-accent:    0 8px 32px rgba(255, 107, 0, 0.2);
+  --shadow-accent-lg: 0 16px 48px rgba(255, 107, 0, 0.3);
+
+  /* ─── Overlays ───────────────────────────────── */
+  --overlay:         rgba(10, 10, 10, 0.7);
+  --overlay-dark:    rgba(0, 0, 0, 0.7);
+  --overlay-accent:  rgba(255, 107, 0, 0.08);
+
+  /* ─── Transitions ────────────────────────────── */
+  --transition:        0.3s ease;
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.25s ease;
+  --transition-slow:   0.5s ease;
+  --transition-bounce: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ─── Z-index ────────────────────────────────── */
+  --z-base:  1;
+  --z-above: 10;
+  --z-modal: 100;
+  --z-nav:   1000;
+  --z-toast: 9999;
+
+  /* ─── Layout ─────────────────────────────────── */
+  --nav-height:        72px;
+  --container-max:     1200px;
+  --container-width:   1200px;
+  --container-pad:     clamp(16px, 4vw, 40px);
+  --container-padding: 32px;
+}

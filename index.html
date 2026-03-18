@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF6B00" />
+  <title>СтройТемп — Перевозка и продажа нерудных материалов</title>
+  <meta name="description" content="Торгово-транспортная компания СтройТемп. Щебень, песок, грунт, пиломатериалы. Аренда спецтехники. Цены на 20% ниже рынка. 500+ клиентов. Работаем 24/7." />
+  <meta property="og:title" content="СтройТемп — Нерудные материалы и перевозки" />
+  <meta property="og:description" content="Доставка щебня, песка, грунта, пиломатериалов. Аренда самосвалов и спецтехники. Цены на 20% ниже рынка." />
+  <meta property="og:image" content="assets/images/og.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Must run before CSS to enable animation initial states -->
+  <script>document.documentElement.classList.add('js')</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">
+        <div class="nav__logo-text">Строй<span>Темп</span></div>
+      </a>
+
+      <ul class="nav__links" id="nav-menu" role="list">
+        <li><a href="#catalog" class="nav__link">Каталог</a></li>
+        <li><a href="#services" class="nav__link">Услуги</a></li>
+        <li><a href="#why" class="nav__link">О нас</a></li>
+        <li><a href="#contact" class="nav__link">Контакты</a></li>
+      </ul>
+
+      <a href="tel:+78001234567" class="nav__phone">+7 (800) 123-45-67</a>
+
+      <button class="nav__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────── -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero__container">
+        <span class="badge">Торгово-транспортная компания</span>
+
+        <h1 class="hero__title" data-animation="fade-up">
+          Нерудные материалы и&nbsp;перевозки
+          <span>по всему региону</span>
+        </h1>
+
+        <p class="hero__subtitle" data-animation="fade-up" data-delay="1">
+          Щебень, песок, грунт, пиломатериалы. Аренда спецтехники.<br>
+          Цены на 20% ниже рынка. Работаем 24/7.
+        </p>
+
+        <div class="hero__actions" data-animation="fade-up" data-delay="2">
+          <a href="#catalog" class="btn-primary">Смотреть каталог</a>
+          <a href="#contact" class="btn-secondary">Получить расчёт</a>
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:8px" data-animation="fade-up" data-delay="3">
+          <span class="tag">20% ниже рынка</span>
+          <span class="tag">500+ клиентов</span>
+          <span class="tag">Работаем 24/7</span>
+          <span class="tag">Собственный автопарк</span>
+        </div>
+      </div>
+
+      <a href="#stats" class="hero__scroll" aria-label="Прокрутить вниз">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+        <span>Прокрутите</span>
+      </a>
+    </section>
+
+    <!-- ─── STATS ─────────────────────────────────── -->
+    <section class="stats" id="stats">
+      <div class="stats__container">
+        <div class="stats__item" data-animation="fade-up">
+          <div class="stats__number" data-count="20" data-suffix="%">20%</div>
+          <div class="stats__label">Ниже рыночных цен</div>
+          <div class="stats__desc">Прямые поставки без посредников</div>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item" data-animation="fade-up" data-delay="2">
+          <div class="stats__number" data-count="500" data-suffix="+">500+</div>
+          <div class="stats__label">Довольных клиентов</div>
+          <div class="stats__desc">Физлица и юридические компании</div>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item" data-animation="fade-up" data-delay="4">
+          <div class="stats__number" data-count="24" data-suffix="/7">24/7</div>
+          <div class="stats__label">Поддержка</div>
+          <div class="stats__desc">Принимаем заявки без выходных</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CATALOG ────────────────────────────────── -->
+    <section class="catalog" id="catalog">
+      <div class="catalog__container">
+        <div class="catalog__header">
+          <span class="badge">Цены</span>
+          <h2 class="section-title" data-animation="fade-up">Каталог <span>материалов</span></h2>
+          <p class="catalog__subtitle" data-animation="fade-up" data-delay="1">
+            Актуальные цены. Доставка собственным автопарком.
+          </p>
+        </div>
+
+        <div class="catalog__grid">
+
+          <div class="card catalog__card" data-animation="fade-up" data-delay="1">
+            <div class="catalog__card-icon">🧱</div>
+            <div class="catalog__card-title">Кирпичный / бетонный бой</div>
+            <div class="catalog__card-price">
+              <span class="catalog__price-value">500</span>
+              <span class="catalog__price-unit">руб./м³</span>
+            </div>
+            <a href="#contact" class="btn-secondary catalog__card-btn">Заказать</a>
+          </div>
+
+          <div class="card catalog__card" data-animation="fade-up" data-delay="2">
+            <div class="catalog__card-icon">🪨</div>
+            <div class="catalog__card-title">Грунт / Песок</div>
+            <div class="catalog__card-price">
+              <span class="catalog__price-value">100</span>
+              <span class="catalog__price-unit">руб./м³</span>
+            </div>
+            <a href="#contact" class="btn-secondary catalog__card-btn">Заказать</a>
+          </div>
+
+          <div class="card catalog__card" data-animation="fade-up" data-delay="3">
+            <div class="catalog__card-icon">⛏️</div>
+            <div class="catalog__card-title">Щебень</div>
+            <div class="catalog__card-price">
+              <span class="catalog__price-value">1 200</span>
+              <span class="catalog__price-unit">руб./м³</span>
+            </div>
+            <a href="#contact" class="btn-secondary catalog__card-btn">Заказать</a>
+          </div>
+
+          <div class="card catalog__card" data-animation="fade-up" data-delay="4">
+            <div class="catalog__card-icon">🔶</div>
+            <div class="catalog__card-title">Крошка</div>
+            <div class="catalog__card-price">
+              <span class="catalog__price-value">1 800</span>
+              <span class="catalog__price-unit">руб./м³</span>
+            </div>
+            <a href="#contact" class="btn-secondary catalog__card-btn">Заказать</a>
+          </div>
+
+          <div class="card catalog__card" data-animation="fade-up" data-delay="2">
+            <div class="catalog__card-icon">🪵</div>
+            <div class="catalog__card-title">Доска</div>
+            <div class="catalog__card-price">
+              <span class="catalog__price-value">15</span>
+              <span class="catalog__price-unit">руб./пог.м</span>
+            </div>
+            <a href="#contact" class="btn-secondary catalog__card-btn">Заказать</a>
+          </div>
+
+          <div class="card catalog__card" data-animation="fade-up" data-delay="3">
+            <div class="catalog__card-icon">🌲</div>
+            <div class="catalog__card-title">Лес кругляк</div>
+            <div class="catalog__card-price">
+              <span class="catalog__price-value">7</span>
+              <span class="catalog__price-unit">руб./пог.м</span>
+            </div>
+            <a href="#contact" class="btn-secondary catalog__card-btn">Заказать</a>
+          </div>
+
+        </div>
+
+        <div class="catalog__footer">
+          <a href="#contact" class="btn-primary">Запросить полный прайс-лист</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ───────────────────────────────── -->
+    <section class="services" id="services">
+      <div class="services__container">
+        <div class="services__header">
+          <span class="badge">Услуги</span>
+          <h2 class="section-title" data-animation="fade-up">Что мы <span>предлагаем</span></h2>
+          <p class="services__subtitle" data-animation="fade-up" data-delay="1">
+            Полный спектр услуг — от доставки до демонтажа.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="card services__card" data-animation="fade-up" data-delay="1">
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" color="#FF6B00">
+                <path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <div class="services__card-title">Аренда спецтехники</div>
+            <div class="services__card-desc">Самосвалы, экскаваторы, бульдозеры. Собственный автопарк, оперативная подача, опытные механизаторы.</div>
+            <a href="#contact" class="services__card-link">Узнать подробнее →</a>
+          </div>
+
+          <div class="card services__card" data-animation="fade-up" data-delay="2">
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" color="#FF6B00">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/>
+              </svg>
+            </div>
+            <div class="services__card-title">Юридическое сопровождение</div>
+            <div class="services__card-desc">Полное юридическое и финансовое сопровождение. Договоры, акты, бухгалтерия — берём на себя.</div>
+            <a href="#contact" class="services__card-link">Узнать подробнее →</a>
+          </div>
+
+          <div class="card services__card" data-animation="fade-up" data-delay="3">
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" color="#FF6B00">
+                <path d="M2 22l2-8 14-14 6 6L10 20z"/><path d="M14 8l2 2"/>
+              </svg>
+            </div>
+            <div class="services__card-title">Вывоз грунта и котлованы</div>
+            <div class="services__card-desc">Разработка и вывоз грунта, рытьё котлованов любой сложности. Быстро, чисто, с документами.</div>
+            <a href="#contact" class="services__card-link">Узнать подробнее →</a>
+          </div>
+
+          <div class="card services__card" data-animation="fade-up" data-delay="1">
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" color="#FF6B00">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="services__card-title">Вклад под 35%</div>
+            <div class="services__card-desc">Пассивный доход — инвестируйте в строительный бизнес. Стабильный процент, прозрачные условия.</div>
+            <a href="#contact" class="services__card-link">Узнать подробнее →</a>
+          </div>
+
+          <div class="card services__card" data-animation="fade-up" data-delay="2">
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" color="#FF6B00">
+                <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6m4-6v6"/><path d="M9 6V4h6v2"/>
+              </svg>
+            </div>
+            <div class="services__card-title">Утилизация и демонтаж</div>
+            <div class="services__card-desc">Утилизация строительного мусора и демонтаж зданий. Вывоз и утилизация под ключ.</div>
+            <a href="#contact" class="services__card-link">Узнать подробнее →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY ────────────────────────────────────── -->
+    <section class="why" id="why">
+      <div class="why__container">
+        <div class="why__header">
+          <span class="badge">Преимущества</span>
+          <h2 class="section-title" data-animation="fade-up">Почему выбирают <span>СтройТемп</span></h2>
+        </div>
+
+        <div class="why__items">
+
+          <div class="why__item" data-animation="fade-up">
+            <div class="why__item-content">
+              <div class="why__item-icon">💰</div>
+              <h3 class="why__item-title">Цены на 20% ниже рынка</h3>
+              <p class="why__item-desc">Собственный автопарк и прямые поставки от производителей позволяют держать цены значительно ниже конкурентов без ущерба для качества.</p>
+            </div>
+            <div class="why__item-visual">
+              <div class="why__price-card">
+                <div class="why__price-label">Экономия</div>
+                <div class="why__price-value">−20%</div>
+                <div class="why__price-note">от рыночных цен</div>
+                <div class="why__price-badge">Прямые поставки</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why__item why__item--reverse" data-animation="fade-up">
+            <div class="why__item-content">
+              <div class="why__item-icon">🚛</div>
+              <h3 class="why__item-title">Доставка в удобное время</h3>
+              <p class="why__item-desc">Принимаем заявки и отгружаем материалы круглосуточно, семь дней в неделю. Срочная доставка в день обращения.</p>
+            </div>
+            <div class="why__item-visual">
+              <div class="why__support-card">
+                <div class="why__support-status">
+                  <span class="why__support-dot"></span>
+                  Онлайн сейчас
+                </div>
+                <div class="why__support-time">24/7</div>
+                <div class="why__support-text">Работаем без выходных</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why__item" data-animation="fade-up">
+            <div class="why__item-content">
+              <div class="why__item-icon">📋</div>
+              <h3 class="why__item-title">Полное сопровождение сделки</h3>
+              <p class="why__item-desc">От заявки до подписания закрывающих документов — берём все организационные вопросы на себя.</p>
+            </div>
+            <div class="why__item-visual">
+              <div class="why__team-card">
+                <div class="why__team-number">500+</div>
+                <div class="why__team-label">Довольных клиентов</div>
+                <div class="why__team-since">С 2010 года</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ────────────────────────────────── -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+
+        <div class="contact__left">
+          <span class="badge">Заявка</span>
+          <h2 class="section-title">Получить <span>расчёт</span></h2>
+          <p class="contact__subtitle">Оставьте заявку — перезвоним в течение 15 минут.</p>
+
+          <form id="contact-form" class="contact__form" novalidate>
+
+            <div class="form__group field">
+              <label class="form__label" for="name">Ваше имя</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Иван Иванов" autocomplete="name" />
+            </div>
+
+            <div class="form__group field">
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" />
+            </div>
+
+            <div class="form__group field">
+              <label class="form__label" for="email">Email <span style="color:var(--color-muted-2);font-weight:400">(необязательно)</span></label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="ivan@example.com" autocomplete="email" />
+            </div>
+
+            <div class="form__group field">
+              <label class="form__label" for="message">Сообщение <span style="color:var(--color-muted-2);font-weight:400">(необязательно)</span></label>
+              <textarea class="form__input form__textarea" id="message" name="message" rows="4" placeholder="Опишите ваш запрос..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary form__submit">
+              Отправить заявку
+            </button>
+
+            <p style="font-size:13px;color:var(--color-muted-2);text-align:center">
+              Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+            </p>
+          </form>
+        </div>
+
+        <div class="contact__right">
+          <div class="contact__info">
+            <div class="contact__info-title">Свяжитесь с нами</div>
+            <ul class="contact__info-list" role="list">
+
+              <li class="contact__info-item">
+                <div class="contact__info-icon">📞</div>
+                <div>
+                  <span class="contact__info-label">Телефон</span>
+                  <a class="contact__info-value" href="tel:+78001234567">+7 (800) 123-45-67</a>
+                </div>
+              </li>
+
+              <li class="contact__info-item">
+                <div class="contact__info-icon">✉️</div>
+                <div>
+                  <span class="contact__info-label">Email</span>
+                  <a class="contact__info-value" href="mailto:info@stroy-temp.ru">info@stroy-temp.ru</a>
+                </div>
+              </li>
+
+              <li class="contact__info-item">
+                <div class="contact__info-icon">📍</div>
+                <div>
+                  <span class="contact__info-label">Адрес</span>
+                  <span class="contact__info-value">г. Москва, ул. Строительная, 1</span>
+                </div>
+              </li>
+
+              <li class="contact__info-item">
+                <div class="contact__info-icon">🕐</div>
+                <div>
+                  <span class="contact__info-label">Режим работы</span>
+                  <span class="contact__info-value">Круглосуточно, 7 дней</span>
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="contact__guarantee">
+              ✅ Перезвоним в течение 15 минут
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__container">
+
+      <div class="footer__top">
+
+        <div>
+          <div class="footer__logo">
+            <span class="nav__logo-text">Строй<span>Темп</span></span>
+          </div>
+          <p class="footer__desc">
+            Торгово-транспортная компания. Перевозка и оптовая продажа нерудных и пиломатериалов с 2010 года.
+          </p>
+          <div class="footer__social-links" style="margin-top:16px">
+            <a href="#" class="footer__social-link" aria-label="ВКонтакте">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.523-2.047-1.708-1.033-1.033-1.49-.854-1.49.126v1.582h-1.744c-3.25 0-5.123-2.227-5.123-5.123 0-2.764 1.807-4.813 4.513-4.813h1.744v1.744c0 .66-.523.86-1.033 1.371-.51.51-.126 1.033.381 1.54l1.744 1.744c.51.51 1.033.381 1.033-.381V7.875h1.744c1.033 0 1.744.723 1.744 1.744v5.76c0 1.033-.711 1.744-1.722 1.744z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.22 13.274l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.928.285z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <span class="footer__nav-title">Каталог</span>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#catalog" class="footer__nav-link">Щебень</a></li>
+            <li><a href="#catalog" class="footer__nav-link">Грунт и песок</a></li>
+            <li><a href="#catalog" class="footer__nav-link">Кирпичный бой</a></li>
+            <li><a href="#catalog" class="footer__nav-link">Крошка</a></li>
+            <li><a href="#catalog" class="footer__nav-link">Доска</a></li>
+            <li><a href="#catalog" class="footer__nav-link">Лес кругляк</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer__nav-title">Услуги</span>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#services" class="footer__nav-link">Аренда спецтехники</a></li>
+            <li><a href="#services" class="footer__nav-link">Вывоз грунта</a></li>
+            <li><a href="#services" class="footer__nav-link">Демонтаж зданий</a></li>
+            <li><a href="#services" class="footer__nav-link">Юр. сопровождение</a></li>
+            <li><a href="#services" class="footer__nav-link">Вклад 35%</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer__nav-title">Контакты</span>
+          <a href="tel:+78001234567" class="footer__phone">+7 (800) 123-45-67</a>
+          <a href="mailto:info@stroy-temp.ru" class="footer__email">info@stroy-temp.ru</a>
+          <span class="footer__hours">г. Москва · Работаем 24/7</span>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2025 СтройТемп. Все права защищены.</span>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+          <a href="#" class="footer__legal-link">Договор оферты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bundle.js"></script>
+
+</body>
+</html>
