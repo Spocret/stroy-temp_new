@@ -1,0 +1,145 @@
+/* ============================================================
+   RESPONSIVE — TABLET
+   Breakpoint: 768px – 1023px
+   ============================================================ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* ----------------------------------------------------------
+     GLOBAL TOKENS
+  ---------------------------------------------------------- */
+  :root {
+    --nav-height: 68px;
+    --container-padding: 24px;
+    --spacing-xl: 80px;
+    --spacing-lg: 48px;
+  }
+
+
+  /* ----------------------------------------------------------
+     NAV
+  ---------------------------------------------------------- */
+  .nav__container {
+    gap: var(--spacing-sm);
+  }
+
+  .nav__logo-img {
+    height: 52px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .nav__phone {
+    font-size: 13px;
+  }
+
+
+  /* ----------------------------------------------------------
+     HERO
+  ---------------------------------------------------------- */
+  .hero {
+    align-items: flex-start;
+    padding-top: calc(var(--nav-height) + 48px);
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .hero__container {
+    padding-top: 0;
+    padding-bottom: var(--spacing-lg);
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+
+
+  /* ----------------------------------------------------------
+     STATS
+  ---------------------------------------------------------- */
+  .stats__item {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+
+  /* ----------------------------------------------------------
+     CATALOG
+  ---------------------------------------------------------- */
+  .catalog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog__card {
+    padding: var(--spacing-sm);
+  }
+
+
+  /* ----------------------------------------------------------
+     SERVICES
+  ---------------------------------------------------------- */
+  .services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__card {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+
+  /* ----------------------------------------------------------
+     WHY
+  ---------------------------------------------------------- */
+  .why {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .why__item {
+    gap: var(--spacing-lg);
+  }
+
+  .why__price-card,
+  .why__support-card,
+  .why__team-card {
+    max-width: 240px;
+  }
+
+
+  /* ----------------------------------------------------------
+     CONTACT
+  ---------------------------------------------------------- */
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact__container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+
+
+  /* ----------------------------------------------------------
+     FOOTER
+  ---------------------------------------------------------- */
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+}

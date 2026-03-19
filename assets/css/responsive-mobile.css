@@ -1,0 +1,578 @@
+/* ============================================================
+   RESPONSIVE MOBILE — СтройТемп
+   Брейкпоинты: 767px | 480px | 375px
+   Не дублирует стили из sections.css
+   ============================================================ */
+
+
+/* ============================================================
+   ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ И КОНТЕЙНЕРЫ
+   ============================================================ */
+
+@media (max-width: 767px) {
+  :root {
+    --nav-height: 64px;
+    --container-padding: 16px;
+    --spacing-xl: 64px;
+    --spacing-lg: 40px;
+  }
+
+  .container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+}
+
+
+/* ============================================================
+   ТИПОГРАФИКА
+   ============================================================ */
+
+@media (max-width: 767px) {
+  h1, .hero__title {
+    font-size: clamp(28px, 8vw, 42px);
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: clamp(24px, 6.5vw, 36px);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: clamp(18px, 5vw, 24px);
+  }
+}
+
+@media (max-width: 375px) {
+  h1, .hero__title {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+
+/* ============================================================
+   НАВИГАЦИЯ
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .nav {
+    height: var(--nav-height);
+  }
+
+  .nav__container {
+    padding: 0 var(--container-padding);
+    height: var(--nav-height);
+  }
+
+  .nav__logo-img {
+    height: 46px;
+    width: auto;
+  }
+}
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .hero {
+    align-items: flex-start;
+  }
+
+  .hero__container {
+    padding-top: calc(var(--nav-height) + var(--spacing-sm));
+    padding-bottom: var(--spacing-md);
+    gap: var(--spacing-sm);
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: var(--spacing-sm);
+  }
+
+  .hero__actions {
+    margin-top: var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+
+  .hero__tags {
+    gap: 8px;
+    margin-top: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__container {
+    padding-top: calc(var(--nav-height) + 12px);
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .hero__subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero__scroll {
+    display: none;
+  }
+
+  .hero__container {
+    padding-top: calc(var(--nav-height) + 8px);
+    padding-bottom: var(--spacing-sm);
+  }
+}
+
+
+/* ============================================================
+   STATS
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .stats {
+    padding: var(--spacing-md) 0;
+  }
+
+  .stats__item {
+    padding: var(--spacing-sm) var(--container-padding);
+    align-items: flex-start;
+  }
+
+  .stats__number {
+    font-size: clamp(40px, 12vw, 56px);
+    line-height: 1;
+  }
+
+  .stats__label {
+    font-size: 13px;
+  }
+
+  .stats__desc {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats__number {
+    font-size: 48px;
+  }
+
+  .stats__item {
+    padding: 20px var(--container-padding);
+  }
+}
+
+@media (max-width: 375px) {
+  .stats__number {
+    font-size: 40px;
+  }
+}
+
+
+/* ============================================================
+   CATALOG
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .catalog {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .catalog__grid {
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+  }
+
+  .catalog__card {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+  }
+
+  .catalog__card-img {
+    border-radius: var(--radius-sm);
+  }
+
+  .catalog__price-value {
+    font-size: 22px;
+  }
+
+  .catalog__price-unit {
+    font-size: 13px;
+  }
+
+  .catalog__card-title {
+    font-size: 15px;
+  }
+
+  .catalog__card-desc {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog__grid {
+    gap: 12px;
+  }
+
+  .catalog__card {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .catalog__price-value {
+    font-size: 20px;
+  }
+}
+
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .services {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .services__grid {
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+  }
+
+  .services__card {
+    padding: var(--spacing-md) var(--spacing-sm);
+    border-radius: var(--radius-md);
+  }
+
+  .services__card-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .services__card-title {
+    font-size: 16px;
+  }
+
+  .services__card-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services__card {
+    padding: var(--spacing-sm);
+  }
+
+  .services__card-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+
+
+/* ============================================================
+   WHY / ПРЕИМУЩЕСТВА
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .why {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .why__items {
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+  }
+
+  .why__item-content {
+    gap: var(--spacing-sm);
+  }
+
+  .why__item-title {
+    font-size: clamp(20px, 5.5vw, 28px);
+  }
+
+  .why__item-text {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  /* Ценовая карточка */
+  .why__price-card {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+  }
+
+  .why__price-value {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .why__price-label {
+    font-size: 13px;
+  }
+
+  /* Карточка поддержки */
+  .why__support-card {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+  }
+
+  /* Карточка команды */
+  .why__team-card {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+  }
+
+  .why__team-number {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .why__team-label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why__price-value {
+    font-size: 28px;
+  }
+
+  .why__team-number {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .why__item-title {
+    font-size: 20px;
+  }
+
+  .why__price-value {
+    font-size: 26px;
+  }
+
+  .why__team-number {
+    font-size: 36px;
+  }
+}
+
+
+/* ============================================================
+   CONTACT / ФОРМА
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .contact {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .contact__container {
+    gap: var(--spacing-md);
+  }
+
+  .contact__form {
+    padding: var(--spacing-md) var(--spacing-sm);
+    border-radius: var(--radius-md);
+  }
+
+  .contact__title {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .contact__subtitle {
+    font-size: 14px;
+  }
+
+  .form__group {
+    gap: var(--spacing-sm);
+  }
+
+  .form__input,
+  .form__textarea,
+  .form__select {
+    font-size: 16px; /* предотвращает zoom на iOS */
+    padding: 14px var(--spacing-sm);
+    border-radius: var(--radius-sm);
+  }
+
+  .form__textarea {
+    min-height: 120px;
+  }
+
+  .form__submit {
+    width: 100%;
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  /* Правая колонка с контактами */
+  .contact__info {
+    gap: var(--spacing-sm);
+  }
+
+  .contact__phone {
+    font-size: 22px;
+  }
+
+  .contact__address,
+  .contact__hours {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__form {
+    padding: var(--spacing-sm);
+  }
+
+  .contact__phone {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact__phone {
+    font-size: 18px;
+  }
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .footer__top {
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .footer__logo-img {
+    height: 42px;
+    width: auto;
+  }
+
+  .footer__desc {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .footer__phone {
+    font-size: 18px;
+  }
+
+  .footer__nav-title {
+    font-size: 13px;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .footer__nav-link {
+    font-size: 13px;
+  }
+
+  .footer__bottom {
+    padding-top: var(--spacing-sm);
+    gap: var(--spacing-xs);
+  }
+
+  .footer__copy {
+    font-size: 12px;
+  }
+
+  .footer__legal-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__phone {
+    font-size: 16px;
+  }
+
+  .footer__desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    padding-top: var(--spacing-md);
+  }
+}
+
+
+/* ============================================================
+   КОМПОНЕНТЫ — КНОПКИ
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 14px 24px;
+    font-size: 14px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+@media (max-width: 375px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+}
+
+
+/* ============================================================
+   СЕКЦИОННЫЕ ЗАГОЛОВКИ
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .section__header {
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-xs);
+  }
+
+  .section__badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .section__title {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .section__subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 375px) {
+  .section__title {
+    font-size: 22px;
+  }
+}

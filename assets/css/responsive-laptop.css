@@ -1,0 +1,222 @@
+/* ==========================================================
+   RESPONSIVE — LAPTOPS (1024px – 1365px)
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   БАЗОВЫЕ КОНТЕЙНЕРЫ
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  :root {
+    --container-padding: 24px;
+  }
+
+  .container,
+  .nav__container,
+  .hero__container,
+  .stats__container,
+  .catalog__container,
+  .services__container,
+  .why__container,
+  .contact__container,
+  .footer__container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+}
+
+/* ----------------------------------------------------------
+   NAV
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .nav__container {
+    gap: 24px;
+  }
+
+  .nav__logo-img {
+    height: 52px;
+  }
+
+  .nav__links {
+    gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .nav__phone {
+    font-size: 14px;
+  }
+}
+
+/* ----------------------------------------------------------
+   HERO
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .hero {
+    padding-top: calc(var(--nav-height) + 56px);
+    padding-bottom: 56px;
+  }
+
+  .hero__title {
+    font-size: clamp(36px, 4vw, 52px);
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+  }
+
+  .hero__actions {
+    gap: var(--spacing-sm);
+  }
+}
+
+/* ----------------------------------------------------------
+   STATS
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .stats__item {
+    padding: 28px 24px;
+  }
+
+  .stats__number {
+    font-size: clamp(40px, 5vw, 60px);
+  }
+}
+
+/* ----------------------------------------------------------
+   CATALOG — 1024px–1199px: 3 колонки (из sections.css)
+            1200px–1365px: 4 колонки, меньше паддинги
+   ---------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .catalog__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .catalog__card {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .catalog__card {
+    padding: 18px;
+  }
+}
+
+/* ----------------------------------------------------------
+   SERVICES — 1024px–1199px: 2 колонки
+             1200px–1365px: 3 колонки, меньше паддинги
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .services__card {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .services__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .services__card {
+    padding: 24px;
+  }
+}
+
+/* ----------------------------------------------------------
+   WHY
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .why__item {
+    gap: 40px;
+  }
+
+  .why__item-visual {
+    min-width: 260px;
+    max-width: 320px;
+  }
+
+  .why__item-title {
+    font-size: clamp(20px, 2vw, 26px);
+  }
+}
+
+/* ----------------------------------------------------------
+   CONTACT
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .contact__container {
+    gap: 40px;
+  }
+
+  .contact__form {
+    padding: 32px 28px;
+  }
+}
+
+/* ----------------------------------------------------------
+   FOOTER — 1024px–1199px: 2 колонки (базово в sections.css)
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .footer__logo-img {
+    height: 44px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .footer__top {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .footer__bottom {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer__copyright {
+    font-size: 13px;
+  }
+}
+
+/* ----------------------------------------------------------
+   ПРЕДОТВРАЩЕНИЕ ГОРИЗОНТАЛЬНОГО СКРОЛЛА
+   (критично для 1280×800 и 1366×768)
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero__container,
+  .stats__container,
+  .catalog__container,
+  .services__container,
+  .why__container,
+  .contact__container,
+  .footer__container {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+}

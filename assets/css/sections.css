@@ -5,6 +5,7 @@
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
+  overflow: visible;
   transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
 }
 
@@ -34,7 +35,7 @@
 }
 
 .nav__logo-img {
-  height: 44px;
+  height: 62px;
   width: auto;
   display: block;
 }
@@ -898,6 +899,7 @@ a.contact__info-value:hover {
     top: var(--nav-height);
     left: 0;
     right: 0;
+    z-index: 999;
     background: rgba(10, 10, 10, 0.97);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -905,13 +907,19 @@ a.contact__info-value:hover {
     align-items: center;
     padding: var(--spacing-md);
     gap: var(--spacing-md);
-    transform: translateY(-110%);
-    transition: transform var(--transition);
     border-bottom: 1px solid var(--color-border);
+    /* скрыто по умолчанию — надёжнее чем только transform */
+    transform: translateY(-100%) translateY(-2px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform var(--transition), visibility 0s linear 0.3s;
   }
 
   .nav__links.menu--open {
     transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform var(--transition), visibility 0s linear 0s;
   }
 
   .nav__link {
