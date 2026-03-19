@@ -33,6 +33,19 @@
   flex-shrink: 0;
 }
 
+.nav__logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.footer__logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
 .nav__logo-icon {
   display: flex;
   align-items: center;
